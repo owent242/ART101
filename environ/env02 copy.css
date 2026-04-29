@@ -1,0 +1,59 @@
+body {
+  background-color: blueviolet;
+}
+
+#top {
+  background-image: url("https://images.stockcake.com/public/2/9/d/29d19150-45d8-4a2f-a573-d6cff47e13f4_large/misty-mountain-majesty-stockcake.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 20px;
+}
+
+#main {
+  padding: 20px;
+}
+
+#main p {
+  color: white;
+}
+
+#character1 {
+  width: 220px;
+}
+
+#character2 {
+  width: 220px;
+} 
+
+.character-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  max-width: 150px;
+  text-align: center;
+  position: relative;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+} 

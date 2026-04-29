@@ -5,4 +5,5 @@ $("#needy-button").click( function(){
     count= count +3;
     $("#needy-button").html("I was clicked " + count)
 
-});
+});export let count = 0;
+
