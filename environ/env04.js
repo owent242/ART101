@@ -12,7 +12,7 @@ let mainCreature = {
     favoriteElement: enviromentElements[1]
 };
 
-let pubs = ["The Drunken Clam", "The Regal Seagull", "Big FLoppas Brewery"];
+let pubs = ["The Drunken Clam", "The Regal Seagull", "Big Floppas Brewery"];
 
 function setTime(timeOfDay) {
     if (timeOfDay == "night") {

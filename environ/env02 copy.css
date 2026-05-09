@@ -56,4 +56,9 @@ body {
   border-width: 10px 8px 0 8px;
   border-style: solid;
   border-color: white transparent transparent transparent;
-} 
+}
+
+#environment-output {
+  color: white;
+  padding: 10px 20px;
+}
