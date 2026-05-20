@@ -11,22 +11,17 @@ $("#needy-button").click(function () {
 
     count = count + 1;
 
-    let arrayPosition = count - 1;
+    let currentMood = buttonCreature.moods[(count - 1) % buttonCreature.moods.length];
 
-    let currentMood = buttonCreature.moods[arrayPosition];
-
-    let message = "<p>You clicked me " + count + " times.</p>";
-    message = message + "<p>My current mood is " + currentMood + ".</p>";
-    message = message + "<p>My name is " + buttonCreature.name + ".</p>";
-    message = message + "<p>I am " + buttonCreature.species + ".</p>";
-    message = message + "<p>My favorite food is " + buttonCreature.favoriteFood + ".</p>";
+    let message = `
+        <p>You clicked me ${count} times.</p>
+        <p>My current mood is ${currentMood}.</p>
+        <p>My name is ${buttonCreature.name}.</p>
+        <p>I am ${buttonCreature.species}.</p>
+        <p>My favorite food is ${buttonCreature.favoriteFood}.</p>
+    `;
 
     $("#output").html(message);
 
-    console.log(count);
-    console.log(arrayPosition);
-    console.log(currentMood);
-
 });
-
 
