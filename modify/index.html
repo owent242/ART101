@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header">
+    <h1>Moodify 🎵</h1>
+    <p>Find music based on your mood</p>
+  </div>
+
+  <!-- quiz -->
+  <div id="quiz-section">
+    <div id="quiz-box">
+      <p id="q-counter">Question 1 of 5</p>
+      <h2 id="q-text"></h2>
+      <div id="options-area"></div>
+      <br>
+      <button id="btn-back" onclick="goBack()">Back</button>
+      <button id="btn-next" onclick="goNext()" disabled>Next</button>
+    </div>
+  </div>
+
+  <!-- results (hidden at first) -->
+  <div id="results-section">
+    <h2 id="results-title"></h2>
+    <p id="results-desc"></p>
+    <br>
+
+    <h3>Playlists for you:</h3>
+    <div id="playlists-area"></div>
+    <br>
+
+    <h3>Songs for you:</h3>
+    <div id="songs-area"></div>
+    <br>
+
+    <button onclick="restart()">Start Over</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

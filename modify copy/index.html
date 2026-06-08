@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodify</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- WELCOME PAGE -->
+  <div id="welcome-section">
+    <div id="welcome-box">
+      <h1>MOODIFY</h1>
+      <p>* find music for your mood *</p>
+      <br>
+      <p class="small-text">answer 5 questions and we will<br>find the perfect playlist for you</p>
+      <br>
+      <button onclick="startQuiz()">[ START ]</button>
+    </div>
+  </div>
+
+  <!-- QUIZ PAGE -->
+  <div id="quiz-section">
+    <div id="header">
+      <h2>MOODIFY</h2>
+    </div>
+    <div id="quiz-box">
+      <p id="q-counter">Question 1 of 5</p>
+      <hr>
+      <h2 id="q-text"></h2>
+      <div id="options-area"></div>
+      <br>
+      <button id="btn-back" onclick="goBack()">BACK</button>
+      <button id="btn-next" onclick="goNext()" disabled>NEXT</button>
+    </div>
+  </div>
+
+  <!-- RESULTS PAGE -->
+  <div id="results-section">
+    <div id="header2">
+      <h2>MOODIFY</h2>
+    </div>
+    <div id="results-box">
+      <p class="small-text">~ your results ~</p>
+      <h2 id="results-title"></h2>
+      <p id="results-desc"></p>
+      <hr>
+      <h3>&gt; playlists for you:</h3>
+      <div id="playlists-area"></div>
+      <br>
+      <h3>&gt; songs for you:</h3>
+      <div id="songs-area"></div>
+      <br>
+      <button onclick="restart()">[ START OVER ]</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

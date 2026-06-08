@@ -1,0 +1,293 @@
+body {
+  background-color: #2d3a2d;
+  color: #c8d8b8;
+  font-family: "Press Start 2P", "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#welcome-box {
+  background-color: #354535;
+  border: 3px solid #6b9e50;
+  padding: 40px 50px;
+  text-align: center;
+  max-width: 480px;
+  width: 90%;
+}
+
+#welcome-box h1 {
+  font-size: 2rem;
+  color: #8fc86a;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px #1a2a1a;
+  letter-spacing: 4px;
+}
+
+#welcome-box p {
+  color: #a0b890;
+  font-size: 0.65rem;
+  line-height: 2;
+}
+
+#welcome-box button {
+  margin-top: 10px;
+  background-color: #4a6e38;
+  border: 2px solid #8fc86a;
+  color: #d0e8b8;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.75rem;
+  padding: 12px 28px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+#welcome-box button:hover {
+  background-color: #5a8045;
+  color: #eaffd0;
+}
+
+#header, #header2 {
+  background-color: #2d3f2d;
+  border-bottom: 2px solid #6b9e50;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+#header h2, #header2 h2 {
+  margin: 0;
+  color: #8fc86a;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px #1a2a1a;
+}
+
+#quiz-section {
+  display: none;
+}
+
+#quiz-box {
+  max-width: 580px;
+  margin: 30px auto;
+  background-color: #354535;
+  border: 2px solid #6b9e50;
+  padding: 28px;
+}
+
+#q-counter {
+  color: #7aaa58;
+  font-size: 0.6rem;
+  margin-bottom: 10px;
+}
+
+#q-text {
+  color: #e0f0d0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #4a6e38;
+  margin: 14px 0;
+}
+
+#options-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.opt-btn {
+  background-color: #2d3a2d;
+  border: 2px solid #4a6e38;
+  color: #c8d8b8;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.62rem;
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+  line-height: 1.8;
+}
+
+.opt-btn:hover {
+  background-color: #3d503d;
+  border-color: #8fc86a;
+  color: #e0f0d0;
+}
+
+.opt-btn.selected {
+  background-color: #3d503d;
+  border-color: #a0d478;
+  color: #eaffd0;
+}
+
+#btn-back {
+  background-color: #2d3a2d;
+  border: 2px solid #4a6e38;
+  color: #9ab88a;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.6rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+#btn-back:hover {
+  border-color: #8fc86a;
+  color: #e0f0d0;
+}
+
+#btn-next {
+  background-color: #4a6e38;
+  border: 2px solid #8fc86a;
+  color: #e0f0d0;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.6rem;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#btn-next:hover {
+  background-color: #5a8045;
+}
+
+#btn-next:disabled {
+  background-color: #303d30;
+  border-color: #3d4d3d;
+  color: #556655;
+  cursor: not-allowed;
+}
+
+#results-section {
+  display: none;
+}
+
+#results-box {
+  max-width: 580px;
+  margin: 30px auto;
+  background-color: #354535;
+  border: 2px solid #6b9e50;
+  padding: 28px;
+}
+
+.small-text {
+  font-size: 0.6rem;
+  color: #7aaa58;
+  text-align: center;
+}
+
+#results-title {
+  color: #a0d478;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 0;
+  text-shadow: 2px 2px #1a2a1a;
+}
+
+#results-desc {
+  color: #9ab88a;
+  font-size: 0.62rem;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+#results-box h3 {
+  color: #8fc86a;
+  font-size: 0.7rem;
+  margin: 16px 0 10px;
+}
+
+.playlist-card {
+  display: block;
+  background-color: #2d3a2d;
+  border: 2px solid #4a6e38;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #c8d8b8;
+}
+
+.playlist-card:hover {
+  border-color: #8fc86a;
+  background-color: #3d503d;
+}
+
+.playlist-card h4 {
+  margin: 0 0 4px;
+  color: #e0f0d0;
+  font-size: 0.65rem;
+}
+
+.playlist-card p {
+  margin: 0;
+  font-size: 0.55rem;
+  color: #7aaa58;
+}
+
+.song-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #3d503d;
+}
+
+.song-num {
+  color: #6b9e50;
+  font-size: 0.6rem;
+  width: 20px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-name {
+  font-size: 0.65rem;
+  color: #e0f0d0;
+  margin-bottom: 4px;
+}
+
+.song-artist {
+  font-size: 0.55rem;
+  color: #7aaa58;
+}
+
+.song-link {
+  color: #8fc86a;
+  font-size: 0.55rem;
+  text-decoration: none;
+}
+
+.song-link:hover {
+  color: #a0d478;
+  text-decoration: underline;
+}
+
+#results-box button {
+  display: block;
+  margin: 0 auto;
+  background-color: #4a6e38;
+  border: 2px solid #8fc86a;
+  color: #e0f0d0;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.6rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#results-box button:hover {
+  background-color: #5a8045;
+}
